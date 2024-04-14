@@ -4,13 +4,11 @@ class Solution {
         while(r>numExchange){
             c+=r/numExchange;
             r=r/numExchange+r%numExchange;
-            System.out.println(c+"           "+r);    
         }
         if(r==numExchange){
             c+=1;
             r=0;
         }
-        System.out.println(c+"           "+r);
         return c;
     }
 }
